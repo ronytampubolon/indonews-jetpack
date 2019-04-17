@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fadingEdgeLength="20dp"
+    android:elevation="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginHorizontal="5dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/panel"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/published_at"
+                android:layout_width="wrap_content"
+                android:text="23 Mei 2018"
+                android:textSize="10sp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/secondarytext"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/author"
+                android:text="Author"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.8"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title_news"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="@color/primarytext"
+                    android:text="Text Title"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:text="Text Title"
+                    android:textColor="@color/secondarytext"
+                    android:layout_below="@id/title_news"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_weight="0.4"
+                android:layout_height="130dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
