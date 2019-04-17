@@ -7,4 +7,5 @@ Library
 - Jetpack Lifecycle
 - LiveData
 - ViewModel
+- Jetpack Navigation
 - Retrofit / Consume API
